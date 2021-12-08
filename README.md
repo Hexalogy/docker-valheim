@@ -17,4 +17,5 @@ Already have an account? Log in to your account
 
 ## Final Step 
 `sudo docker-compose up -d && sleep 1 && sudo docker-compose logs -t -f`
+
 So you can Ctrl+C and detach from the logs while the containers are still up.
