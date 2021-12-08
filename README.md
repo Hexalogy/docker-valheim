@@ -10,7 +10,6 @@ Already have an account? Log in to your account
 
 1.3  — Click Create instance. 
 
-1
 1.4 — Click Change AWS Region and Availability Zone. 
 
 ## Step 2:
