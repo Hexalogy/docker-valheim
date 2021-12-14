@@ -14,6 +14,8 @@ Already have an account? Log in to your account
 
 ## Step 2:
 
+2. Add Networking rule to allow UDP protocol and allow port 2456-2458
+
 ## Final Step 
 `sudo docker-compose up -d && sleep 1 && sudo docker-compose logs -t -f`
 
