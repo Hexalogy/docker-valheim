@@ -1,5 +1,8 @@
 
+
 # Docker-Valheim
+
+I advise using 4GB instance 
 
 ## Step 1: Create a Linux Instance
 To create a dedicated server, you must first create an instance. 
@@ -12,6 +15,8 @@ Already have an account? Log in to your account
 3. Click **Create instance**. 
 
 4. Click **Change AWS Region and Availability Zone**. 
+5. Under **Pick your instance image**, choose **Linux/Unix**, **OS Only**, **Ubuntu 20.04**
+6. Choose the **4GB RAM** instance type or higher, you can get away with 2GB as long no more than 2 people connect to the server simultaneously. 
 
 ## Step 2: Connect to your instance
 
