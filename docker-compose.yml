@@ -8,9 +8,9 @@ services:
       - 2458:2458/udp
     environment:
       - PORT=2456
-      - NAME="YOURSERVERNAME"
-      - WORLD="Dedicated"
-      - PASSWORD="ATLEAST5CHARACTERS"
+      - NAME="NH BOYSS"
+      - WORLD="FTATUM"
+      - PASSWORD="secret"
       - TZ=America/Chicago
       - PUBLIC=1
       - AUTO_UPDATE=1
