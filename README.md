@@ -3,15 +3,15 @@
 
 ## Step 1: Create a Linux Instance
 To create a dedicated server, you must first create an instance. 
-1.1 — Sign up for an Amazon Lightsail account. 
+1. Sign up for an Amazon Lightsail account. 
 
 Already have an account? Log in to your account
 
-1.2  — Open the Amazon Lightsail console. 
+2. Open the Amazon Lightsail console. 
 
-1.3  — Click **Create instance**. 
+3. Click **Create instance**. 
 
-1.4 — Click **Change AWS Region and Availability Zone**. 
+4. Click **Change AWS Region and Availability Zone**. 
 
 ## Step 2: Connect to your instance
 
@@ -23,8 +23,30 @@ Already have an account? Log in to your account
 
 ## Step 3: Setup the Valheim server on your instance
 
---
+1. You will run Valheim using docker. First, install docker:
+```
+curl -fsSL https://get.docker.com -o get-docker.sh 
+sudo sh get-docker.sh 
+sudo apt install docker-compose
+```
 
+2. Create the **docker-compose.yml** file. 
+
+Replace **YOURSERVERNAME** and **ATLEAST5CHARACTERS** with a valid server name and password. Notice that this compose file also enables automatic updates and backups!
+
+```bash
+curl -o docker-compose.yml https://gist.githubusercontent.com/robzhu/a127a6bce1ea25b01d40efb57ad1c26e/raw/30a2927a901dd614a518319cfeaa63a6bd2648a4/gistfile1.txt
+
+nano docker-compose.yml
+
+#make your edits inside nano, then press CTRL+S, CTRL+X to save and quit
+```
+
+3. Bring up the server
+```
+sudo docker-compose up
+```
+use -d for detached mode
 
 ## Final Step 
 `sudo docker-compose up -d && sleep 1 && sudo docker-compose logs -t -f`
