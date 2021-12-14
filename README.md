@@ -2,8 +2,6 @@
 
 # Docker-Valheim
 
-I advise using 4GB instance 
-
 ## Step 1: Create a Linux Instance
 To create a dedicated server, you must first create an instance. 
 1. Sign up for an Amazon Lightsail account. 
@@ -18,11 +16,13 @@ Already have an account? Log in to your account
 5. Under **Pick your instance image**, choose **Linux/Unix**, **OS Only**, **Ubuntu 20.04**
 6. Choose the **4GB RAM** instance type or higher, you can get away with 2GB as long no more than 2 people connect to the server simultaneously. 
 
+![enter image description here](https://user-images.githubusercontent.com/9726028/146091090-376da0ca-f092-4966-b998-7404ac0cda51.png)
+
 ## Step 2: Connect to your instance
 
 1. Once your server is up, click the "**...**" icon and then click **Manage**
 
-2. Add Networking rule to allow UDP protocol and allow port 2456-2458
+2. Add Networking rule to allow **UDP** protocol and allow port **2456-2458**
 
 3. Click the **Connect** tab and click **Connect using SSH**.
 
@@ -81,4 +81,8 @@ wget https://www.dropbox.com/s/<FILE_ID>/YOURWORLD.fwl?dl=0 -O YOURWORLD.fwl
 4. Open docker-compose.yml and edit the WORLD property (line 12) to match the name of your .db/.fwl files. 
 
 5. Open **./valheim/server/start-server.sh** and edit the name of the World so it match.
+
+```
+./valheim_server.x86_64 -name "[NAME]" -port 2456 -world "[WORLD]" -password "[PASSWORD]"
+```
 
