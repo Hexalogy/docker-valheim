@@ -80,7 +80,7 @@ wget https://www.dropbox.com/s/<FILE_ID>/YOURWORLD.fwl?dl=0 -O YOURWORLD.fwl
 
 4. Open docker-compose.yml and edit the WORLD property (line 12) to match the name of your .db/.fwl files. 
 
-5. Open **./valheim/server/start-server.sh** and edit the name of the World so it match.
+5. Open **./valheim/server/start-server.sh** and edit the name of the World so it match
 
 ```
 ./valheim_server.x86_64 -name "[NAME]" -port 2456 -world "[WORLD]" -password "[PASSWORD]"
